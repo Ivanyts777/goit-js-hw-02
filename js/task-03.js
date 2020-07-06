@@ -3,13 +3,13 @@
 const findLongestWord = function (string) {
   const wordSplit = string.split(" ");
   let longestWord = wordSplit[0];
-  console.log(string);
+  // console.log(string);
   for (const word of wordSplit) {
     if (word.length > longestWord.length) {
       longestWord = word;
     }
   }
-  console.log(longestWord);
+  return longestWord;
 };
 
 /*
